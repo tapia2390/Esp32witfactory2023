@@ -110,7 +110,6 @@
     <string name="txt_wifi_password">Wifi Password</string>
 
 
-
     <!--esptouch-->
     <string name="menu_item_about">About App</string>
     <string name="about_app_version">App Version: %s</string>
@@ -355,7 +354,6 @@
 
 
     <!-- fin text esp32-->
-
 
 
 </resources>

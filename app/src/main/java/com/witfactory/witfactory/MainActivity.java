@@ -3,6 +3,7 @@ package com.witfactory.witfactory;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.content.res.Resources;
@@ -17,6 +18,7 @@ import androidx.databinding.DataBindingUtil;
 
 import com.witfactory.witfactory.data.classModel.Utils;
 import com.witfactory.witfactory.databinding.ActivityMainBinding;
+import com.witfactory.witfactory.esp32.activities.EspMainActivity;
 import com.witfactory.witfactory.model.LocaleHelper;
 
 public class MainActivity extends Activity  {
@@ -125,6 +127,8 @@ public class MainActivity extends Activity  {
             Utils.aletSinInternet(this);
         } else {
             //amplifyCognito.validarAuth();
+            Intent intent = new Intent(this, EspMainActivity.class);
+            startActivity(intent);
         }
     }
 }
