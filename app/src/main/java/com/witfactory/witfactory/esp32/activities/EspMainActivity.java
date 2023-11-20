@@ -28,13 +28,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.cardview.widget.CardView;
 import androidx.core.app.ActivityCompat;
-
 import com.espressif.provisioning.ESPConstants;
 import com.espressif.provisioning.ESPProvisionManager;
 import com.witfactory.witfactory.BuildConfig;
 import com.witfactory.witfactory.R;
 import com.witfactory.witfactory.esp32.AppConstants;
-
 
 public class EspMainActivity extends AppCompatActivity {
 
@@ -322,15 +320,15 @@ public class EspMainActivity extends AppCompatActivity {
     }
 
     private void gotoQrCodeActivity() {
-        //Intent intent = new Intent(EspMainActivity.this, AddDeviceActivity.class);
-        //startActivity(intent);
+        Intent intent = new Intent(EspMainActivity.this, AddDeviceActivity.class);
+        startActivity(intent);
     }
 
     private void goToBLEProvisionLandingActivity(int securityType) {
 
-       // Intent intent = new Intent(EspMainActivity.this, BLEProvisionLanding.class);
-        //intent.putExtra(AppConstants.KEY_SECURITY_TYPE, securityType);
-        //startActivity(intent);
+       Intent intent = new Intent(EspMainActivity.this, BLEProvisionLanding.class);
+       intent.putExtra(AppConstants.KEY_SECURITY_TYPE, securityType);
+       startActivity(intent);
     }
 
     private void goToWiFiProvisionLandingActivity(int securityType) {
