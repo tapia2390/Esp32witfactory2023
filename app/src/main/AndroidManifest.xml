@@ -42,43 +42,71 @@
         android:usesCleartextTraffic="true"
         tools:ignore="GoogleAppIndexingWarning,LockedOrientationActivity"
         tools:targetApi="31">
-        <activity
-            android:name=".esp32.activities.ProvisionActivity"
-            android:exported="false" />
-        <activity
-            android:name=".esp32.activities.ProvisionLanding"
-            android:exported="false" />
-        <activity
-            android:name=".esp32.activities.AddDeviceActivity"
-            android:exported="false" />
-        <activity
-            android:name=".esp32.activities.WiFiConfigActivity"
-            android:exported="false" />
-        <activity
-            android:name=".esp32.activities.WiFiScanActivity"
-            android:exported="false" />
-        <activity
-            android:name=".esp32.activities.ProofOfPossessionActivity"
-            android:exported="false" />
-        <activity
-            android:name=".esp32.activities.BLEProvisionLanding"
-            android:exported="false"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
+
+
         <activity
             android:name=".esp32.activities.EspMainActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
             android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".esp32.activities.AddDeviceActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity
+            android:name=".esp32.activities.BLEProvisionLanding"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+
+        <activity
+            android:name=".esp32.activities.WiFiConfigActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity
+            android:name=".esp32.activities.ProvisionLanding"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity
+            android:name=".esp32.activities.ProvisionActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
         <activity
             android:name=".esp32.activities.SettingsActivity"
             android:exported="false"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+
+        <activity
+            android:name=".esp32.activities.WiFiScanActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity
+            android:name=".esp32.activities.ProofOfPossessionActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
